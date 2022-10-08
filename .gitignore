@@ -1,0 +1,70 @@
+
+
+
+
+
+##FRONTEND dependencies
+
+
+# dependencies
+/webappcloud-client/node_modules
+/webappcloud-client/.pnp
+/webappcloud-client/.pnp.js
+
+# testing
+webappcloud-client/coverage
+
+# production
+webappcloud-client/build
+
+# misc
+webappcloud-client/.DS_Store
+webappcloud-client/.env.local
+webappcloud-client/.env.development.local
+webappcloud-client/.env.test.local
+webappcloud-client/.env.production.local
+
+webappcloud-client/npm-debug.log*
+webappcloud-client/yarn-debug.log*
+webappcloud-client/yarn-error.log*
+
+
+## backend dependencies
+
+
+
+# compiled output
+/webappcloud-server/dist
+webappcloud-server/node_modules
+
+# Logs
+webappcloud-server/logs
+webappcloud-server/*.log
+webappcloud-server/npm-debug.log*
+webappcloud-server/pnpm-debug.log*
+webappcloud-server/yarn-debug.log*
+webappcloud-server/yarn-error.log*
+webappcloud-server/lerna-debug.log*
+
+# OS
+webappcloud-server/.DS_Store
+
+# Tests
+webappcloud-server/coverage
+webappcloud-server/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
