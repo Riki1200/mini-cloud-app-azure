@@ -20,4 +20,4 @@ FEATURE
 
 Design
 
-![](./webapp-cloud-azure/Screen%20Shot%202022-10-10%20at%203.58.36%20PM.png)
+![](webapp-cloud-azure/Screen%20Shot%202022-10-10%20at%203.58.36%20PM.png)
