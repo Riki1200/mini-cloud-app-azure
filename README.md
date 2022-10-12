@@ -10,7 +10,7 @@ FEATURE
 
 * Upload files and folders
 
-* Shares content
+* Share content
 
 * Create files and folders
 
