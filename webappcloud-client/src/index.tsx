@@ -2,17 +2,20 @@ import React from 'react';
 import { RecoilRoot } from 'recoil';
 import { NextUIProvider } from '@nextui-org/react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from './Screen/Home/App';
 import './index.scss';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
     <RecoilRoot>
-      <NextUIProvider>
-        <App />
-      </NextUIProvider>
+      <Router>
+        <NextUIProvider>
+          <App />
+        </NextUIProvider>
+      </Router>
     </RecoilRoot>
   </React.StrictMode>,
 );
