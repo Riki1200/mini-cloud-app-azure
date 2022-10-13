@@ -4,7 +4,7 @@ import { NextUIProvider } from '@nextui-org/react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './Screen/Home/App';
-import './index.scss';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
