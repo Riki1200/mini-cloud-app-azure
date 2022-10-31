@@ -36,6 +36,8 @@ webappcloud-client/yarn-error.log*
 # compiled output
 /webappcloud-server/dist
 webappcloud-server/node_modules
+webappcloud-server/.env
+webappcloud-server/*.env
 
 # Logs
 webappcloud-server/logs
