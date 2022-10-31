@@ -2,7 +2,7 @@ import { ReactChildren } from 'react';
 import { Button, Card, Col } from '@nextui-org/react';
 
 type SiderbarProps = {
-  styles: {
+  styles?: {
     icon?: React.ReactElement;
     components: ReactChildren[];
   };
