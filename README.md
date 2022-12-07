@@ -4,17 +4,14 @@ The mini cloud app is a concept that how it works the cloud app look like Google
 
 
 
-FEATURE
+### - FEATURE
 
 * Authentication
-
 * Upload files and folders
-
 * Share content
-
 * Create files and folders
-
-* Upload non-large files
+* Upload small files and archives
+* Support multiple format's files
 
 
 
