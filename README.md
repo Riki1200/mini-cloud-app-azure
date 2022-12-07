@@ -1,6 +1,6 @@
 # Mini Cloud App
 
-This app is proposal education. This app consist on it does work the cloud or similiar
+The mini cloud app is a concept that how it works the cloud app look like GoogleDrive and OneDrive.
 
 
 
@@ -13,6 +13,8 @@ FEATURE
 * Share content
 
 * Create files and folders
+
+* Upload non-large files
 
 
 
