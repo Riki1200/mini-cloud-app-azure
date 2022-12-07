@@ -10,11 +10,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-
-
-
 .App {
   text-align: center;
+  animation: splash infinite ease-in-out !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 .App-logo {
@@ -49,5 +53,14 @@ code {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes splash {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
   }
 }

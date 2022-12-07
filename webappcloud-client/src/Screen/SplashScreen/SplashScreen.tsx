@@ -1,21 +1,44 @@
-import { useState, useEffect } from 'react';
-import { Container } from '@nextui-org/react';
+import { useState, useEffect, useTransition } from 'react';
+import { Container, Text, Card, Row, Col } from '@nextui-org/react';
+import Lottie, { LottileAnimationControl } from 'lottie-react-web';
+import riskcloudAnimation from '../../Assets/isometrict.loader.json';
 import { useLocation, useNavigate, useNavigation } from 'react-router-dom';
+
+const TIME_LIMIT = 7000;
 
 export default function SplashScreen() {
   const location = useLocation();
-  const navigationData = useNavigation();
   const navigationUp = useNavigate();
-
+  const [trasition, lookUpFunction] = useTransition();
+  const [navigate, setNavigate] = useState(false);
   useEffect(() => {
     if (location.pathname === '/') {
-      navigationUp('/home', { preventScrollReset: true, replace: true });
+      if (navigate) {
+        navigationUp('/home', { preventScrollReset: true, replace: true });
+      }
     }
-  }, [location.pathname, navigationUp]);
+
+    lookUpFunction(() => {
+      setTimeout(() => {
+        setNavigate(true);
+      }, TIME_LIMIT);
+    });
+  }, [location, navigationUp, trasition, navigate]);
 
   return (
-    <>
-      <Container fluid></Container>
-    </>
+    <Container fluid responsive>
+      <Col>
+        <Lottie
+          width={'40rem'}
+          options={{
+            animationData: riskcloudAnimation,
+            autoplay: true,
+          }}
+        />
+        <Row justify="center">
+          <Text h2>RISK-CLOUD</Text>
+        </Row>
+      </Col>
+    </Container>
   );
 }
